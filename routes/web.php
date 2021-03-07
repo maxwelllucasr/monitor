@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\MonitorController::class,'index']);
 Route::get('/monitor',[App\Http\Controllers\MonitorController::class, 'monitorAPI']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

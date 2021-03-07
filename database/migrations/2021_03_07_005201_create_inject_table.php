@@ -16,6 +16,10 @@ class CreateInjectTable extends Migration
         Schema::create('inject', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('filename');
+            $table->decimal('release_time');
+            $table->decimal('end_time');
+            $table->string('box');
         });
     }
 

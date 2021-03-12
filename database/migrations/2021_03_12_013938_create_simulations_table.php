@@ -20,6 +20,7 @@ class CreateSimulationsTable extends Migration
             $table->integer('score');
             $table->string('created_origin');
             $table->integer('inject_score');
+            $table->json('uptime_score');
         });
     }
 

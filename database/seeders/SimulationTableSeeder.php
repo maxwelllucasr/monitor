@@ -19,8 +19,8 @@ class SimulationTableSeeder extends Seeder
             'inject_score' => 100,
             'created_origin' => '127.0.0.1',
             'uptime_score' => '{}',
-            'sim_start' => 'Fri Mar 12 03:11:08 2021 UTC',
-            'sim_end' => 'Fri Mar 12 03:11:08 2021 UTC',
+            'sim_start' => '2021-03-12 22:24:06',
+            'sim_end' => '2021-03-12 22:24:06',
          
 
 

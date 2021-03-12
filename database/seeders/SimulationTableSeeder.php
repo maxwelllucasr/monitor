@@ -14,7 +14,7 @@ class SimulationTableSeeder extends Seeder
     public function run()
     {
         //
-        \DB::table('simulation')->insert([
+        \DB::table('simulations')->insert([
             'id' => 1,
             'inject_score' => 100,
             'created_origin' => '127.0.0.1',

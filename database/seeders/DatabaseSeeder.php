@@ -16,8 +16,9 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call(MonitorTableSeeder::class);
         $this->call(InjectTableSeeder::class);
-        $this->call(UploadTableSeeder::class);
         $this->call(SimulationTableSeeder::class);
+        $this->call(UploadTableSeeder::class);
+
 
     }
 }

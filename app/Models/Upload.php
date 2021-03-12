@@ -9,7 +9,8 @@ class Upload extends Model
 {
     use HasFactory;
 
-    function getWordCount() {
+    protected $table = 'upload';
+    public function getWordCount() {
         
     }
 }

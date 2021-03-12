@@ -16,6 +16,11 @@ class CreateUploadTable extends Migration
         Schema::create('upload', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->unsignedBigInteger('simulation_id');
+            $table->unsignedBigInteger('inject_id');
+            $table->foreign('simulation_id')->references('id')->on('simulations');
+            $table->foreign('inject_id')->references('id')->on('inject');
         });
     }
 

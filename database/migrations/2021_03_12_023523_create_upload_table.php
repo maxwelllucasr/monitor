@@ -21,6 +21,8 @@ class CreateUploadTable extends Migration
             $table->unsignedBigInteger('inject_id');
             $table->foreign('simulation_id')->references('id')->on('simulations');
             $table->foreign('inject_id')->references('id')->on('inject');
+
+            $table->string('filename');
         });
     }
 

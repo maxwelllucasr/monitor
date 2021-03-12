@@ -11,6 +11,6 @@ class Upload extends Model
 
     protected $table = 'upload';
     public function getWordCount() {
-        
+       echo storage_path() . "\uploads\\". $this->filename; 
     }
 }
